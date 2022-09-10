@@ -1,0 +1,60 @@
+{
+    "name": "telegram bot",
+    "description": "telegram bot",
+    "keywords": [
+        "telegram"
+    ],
+    "repository": "https://github.com/",
+    "env": {
+        "OWNER_ID": {
+            "description": "Value",
+            "value": ""
+        },
+        "API_HASH": {
+            "description": "Value",
+            "value": ""
+        },
+        "APP_ID": {
+            "description": "Value",
+            "value": ""
+        },
+        "AUTH_IDS": {
+            "description": "Value",
+            "value": "0"
+        },
+        "BOT_TOKEN": {
+            "description": "Value",
+            "value": ""
+        },
+        "BOT_USERNAME": {
+            "description": "Value",
+            "value": ""
+        },
+        "QOBUZ_MAIL": {
+            "description": "Value",
+            "value": ""
+        },
+        "QOBUZ_PASS": {
+            "description": "Value",
+            "value": ""
+        },
+        "QOBUZ_QUAL": {
+            "description": "Value",
+            "value": "27"
+        },
+        "LOG_CHANNEL": {
+            "description": "Value",
+            "value": "0"
+        }
+    },
+    
+    "buildpacks": [
+        {
+            "url": "https://github.com/hasibulkabir/heroku-buildpack-ffmpeg-ffprobe"
+        },
+        {
+            "url": "heroku/python"
+        }
+    ],
+    "stack": "heroku-20"
+}
