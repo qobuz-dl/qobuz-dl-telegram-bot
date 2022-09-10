@@ -17,5 +17,4 @@ RUN pip3 install --no-cache-dir -r requirements.txt && \
 RUN locale-gen en_US.UTF-8
 
 COPY . .
-
-CMD ["bash","start.sh"]
+CMD python3 update.py && python3 bot.py
