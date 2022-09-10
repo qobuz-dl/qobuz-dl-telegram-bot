@@ -1,0 +1,6 @@
+pyrogram
+TgCrypto
+requests
+qobuz-dl
+psutil
+heroku3
