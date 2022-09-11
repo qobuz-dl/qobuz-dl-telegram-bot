@@ -3,9 +3,9 @@
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://dashboard.heroku.com/new?button-url=https%3A%2F%2Fgithub.com%2F&template=https://github.com/qobuz-dl/qobuz-dl-telegram-bot)
 
+## Premium account is required for the bot to work.
 
-
-## Commands for bot(set through @BotFather)
+## Commands Bot( @BotFather )
 
 ```
 start - start bot
@@ -22,9 +22,7 @@ log - log
 
 2. **Set up config file**
 
-- config.py
-
-- Fill up variables:
+- Fill up variables config.py:
 
    - Mandatory variables:
    
