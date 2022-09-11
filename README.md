@@ -12,6 +12,7 @@ start - start bot
 download - dl one link and multi link
 status - bot status
 log - log
+reset - restart bot
 
 ```
 1. **Installing requirements**
@@ -36,6 +37,12 @@ log - log
         - `QOBUZ_QUAL`: Quality
         - `BOT_USERNAME`: Bot username not @
         - `LOG_CHANNEL`: Channel Id -100xxxx
+        
+        Heroku Restart Bot
+        
+        - `HEROKU_API_KEY`: Heroku Api Key
+        - `HEROKU_APP_NAME`: Heroku Name
+    
 
 
 ## Quality
