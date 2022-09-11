@@ -38,7 +38,7 @@ log - log
         - `LOG_CHANNEL`: Channel Id -100xxxx
 
 
-🌿 Quality
+## Quality
 ```
   5:  MP3-320 Kbps
   6:  CD-16-bit/44,1 kHz
@@ -46,6 +46,13 @@ log - log
   27: 24-Bit Hi-Res/Upto 192 kHz
 ```
 
+## Support Link
+```
+https://open.qobuz.com/artist/43821
+https://open.qobuz.com/album/doldeure0459b
+https://open.qobuz.com/track/138731318
+
+```
 3. **Deploying on VPS Using Docker**
 
 - Start Docker daemon (skip if already running), if installed by snap then use 2nd command:
