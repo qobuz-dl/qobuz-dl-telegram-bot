@@ -48,9 +48,9 @@ log - log
 
 ## Support Link
 ```
-https://open.qobuz.com/artist/43821
-https://open.qobuz.com/album/doldeure0459b
-https://open.qobuz.com/track/138731318
+Artist: https://open.qobuz.com/artist/43821
+Albüm:  https://open.qobuz.com/album/doldeure0459b
+Track:  https://open.qobuz.com/track/138731318
 
 ```
 3. **Deploying on VPS Using Docker**
