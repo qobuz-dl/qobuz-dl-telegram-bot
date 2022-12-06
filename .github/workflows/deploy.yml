@@ -16,3 +16,17 @@ jobs:
           docker_heroku_process_type: web
           stack: "container"
           region: "us"
+        env:
+          HD_API_ID: ${{secrets.API_ID}}
+          HD_API_HASH: ${{secrets.API_HASH}}
+          HD_OWNER_ID: ${{secrets.OWNER_ID}}
+          HD_BOT_TOKEN: ${{secrets.BOT_TOKEN}}
+          HD_AUTH_IDS: ${{secrets.AUTH_IDS}}
+          HD_QOBUZ_MAIL: ${{secrets.QOBUZ_MAIL}}
+          HD_QOBUZ_PASS: ${{secrets.QOBUZ_PASS}}
+          HD_QOBUZ_QUAL: ${{secrets.QOBUZ_QUAL}}
+          HD_BOT_USERNAMEL: ${{secrets.BOT_USERNAME}}
+          HD_LOG_CHANNEL: ${{secrets.LOG_CHANNEL}}
+          HD_HEROKU_API_KEY: ${{secrets.HEROKU_API_KEY}}
+          HD_HEROKU_APP_NAME: ${{secrets.HEROKU_APP_NAME}}
+          
