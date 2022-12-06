@@ -27,7 +27,7 @@ def antiSpam(client: Client, message: Message):
 
     # tek işlem
     if os.path.isfile("calisiyor.txt"):
-        a = sendMessage(message, f"Currently Downloading Song.\n{message.from_user.mention}\nWait Your Turn")
+        a = sendMessage(message, f"Currently Down. Song.\n{message.from_user.mention}\nWait Turn")
         time.sleep(15)
         return a.delete()
     else:
@@ -36,22 +36,7 @@ def antiSpam(client: Client, message: Message):
     # tek işlem
 
     linkler = []
-    helpstr = f"""
-  a.) Reply Txt file with links.
-  b.) Or string with spaces after the command.
-  c.) Or reply to the links in the sub-lines.
-
-🌿 Quality
-  5:  MP3-320 Kbps
-  6:  CD-16-bit/44,1 kHz
-  7:  24-Bit Hi-Res/Upto 96 kHz
-  27: 24-Bit Hi-Res/Upto 192 kHz
-
-Default Quality: {str(Config.QOBUZ_QUAL)}
-
-<code>/download https://open.qobuz.com/artist/189148</code>
-
-"""
+    helpstr = f"""No Download Source"""
     if message.reply_to_message:
         if message.reply_to_message.document:
             try:
@@ -85,7 +70,7 @@ Default Quality: {str(Config.QOBUZ_QUAL)}
             qobuz.handle_url(link)
             for fil in absolutePaths("qobuzdown"):
                 if fil.lower().endswith(".jpg"): os.remove(fil)
-            editMessage(inme, f'⏫ Uploading to Telegram: {str(sira)} / {len(linkler)} ({len(list(absolutePaths("qobuzdown")))} File)')
+            editMessage(inme, f'⏫ Up to Telegram: {str(sira)} / {len(linkler)} ({len(list(absolutePaths("qobuzdown")))} File)')
             for fil in sorted(absolutePaths("qobuzdown")):
                 x:Message = sendMusic(inme, fil)
                 if Config.LOG_CHANNEL:
